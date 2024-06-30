@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vh;
+    align-items: baseline;
+}
+
+header a {
+    text-decoration: none;
+}
+
+.name {
+    font-family: 'Roboto Mono';
+    font-size: 40px;
+    display: flex;
+}
+
+.name a {
+    color: #000000;
+}
+
+.navbar {
+    font-family: Arial;
+    text-align: right;
+    display: flex;
+    font-size: 20px;
+}
+
+.navbar a {
+    color: #000000;
+}
