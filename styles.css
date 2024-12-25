@@ -3,7 +3,8 @@
 header {
     display: flex;
     justify-content: space-between;
-    padding: 1.5vh;
+    padding-top: 2vh;
+    padding-left: 2vh;
     align-items: baseline;
 }
 
@@ -11,10 +12,19 @@ header a {
     text-decoration: none;
 }
 
-.name {
-    font-family: 'Roboto Mono';
+.title {
+    font-family: 'Roboto Mono', sans-serif;
     font-size: 40px;
     display: flex;
+    padding-left: 2vh;
+}
+
+.subtitle {
+    font-family: 'Roboto Mono', sans-serif;
+    font-size: 20px;
+    color: #8a7d77;
+    padding-left: 2vh;
+    margin-top: -20px;
 }
 
 .name a {
@@ -22,7 +32,7 @@ header a {
 }
 
 .navbar {
-    font-family: Arial;
+    font-family: Arial, sans-serif;
     text-align: right;
     display: flex;
     font-size: 20px;
@@ -30,4 +40,37 @@ header a {
 
 .navbar a {
     color: #000000;
+}
+
+.text {
+    font-family: 'Roboto Mono', sans-serif;
+    padding-left: 2vh;
+    padding-top: 2vh;
+}
+
+footer {
+    position: fixed;
+    text-align: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 1vh;
+}
+
+hr {
+    width: 90%;
+}
+
+.footer-text {
+    font-family: Arial, sans-serif;
+}
+
+footer a {
+    color: #000000;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+
+a:hover {
+    color: #8a7d77;
 }
