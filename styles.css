@@ -5,6 +5,7 @@ header {
     justify-content: space-between;
     padding-top: 2vh;
     padding-left: 2vh;
+    padding-right: 2vh;
     align-items: baseline;
 }
 
@@ -17,6 +18,7 @@ header a {
     font-size: 40px;
     display: flex;
     padding-left: 2vh;
+    padding-right: 2vh;
 }
 
 .subtitle {
@@ -24,6 +26,7 @@ header a {
     font-size: 20px;
     color: #8a7d77;
     padding-left: 2vh;
+    padding-right: 2vh;
     margin-top: -20px;
 }
 
@@ -46,6 +49,7 @@ header a {
     font-family: 'Roboto Mono', sans-serif;
     padding-left: 2vh;
     padding-top: 2vh;
+    padding-right: 2vh;
 }
 
 footer {
