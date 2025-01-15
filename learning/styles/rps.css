@@ -1,0 +1,87 @@
+body {
+  background-color: white;
+}
+
+.title {
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.move-button {
+  background-color: transparent;
+  border-color: transparent;
+  cursor: pointer;
+}
+
+.move-icon {
+  height: 200px;
+}
+
+.footer-text {
+  text-align: center;
+  font-family: Arial;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+}
+
+.bounce {
+  animation: bounce 1s;
+}
+
+.hidden {
+  display: none;
+}
+
+.fadeOut {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 1s, opacity 1s linear;
+}
+
+.game-container {
+  height: 500px;
+}
+
+.center-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.moves-container {
+  height: 250px;
+}
+
+
+footer {
+  margin-top: 30px;
+}
+
+.vsText {
+  margin: 50px;
+  text-align: center;
+  font-size: 50px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.resultText {
+  text-align: center;
+  font-size: 35px;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.playAgainButton {
+  font-size: 25px;
+  margin-top: 25px;;
+}

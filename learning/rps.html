@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <link href="styles/rps.css" rel="stylesheet"/>
+  <title>Rock, Paper, Scissors!</title>
+</head>
+<body>
+  <header>
+    <p class="title">Rock, Paper, Scissors!</p>
+  </header>
+
+  <div class="game-container">
+  <div class="center-container moves-container">
+    <button onclick="rps(this);" class="move-button js-rock-button js-move-button"><img src="images/rock.png" class="move-icon"></button>
+    <button onclick="rps(this);" class="move-button js-paper-button js-move-button"><img src="images/paper.png" class="move-icon"></button>
+    <button onclick="rps(this);" class="move-button js-scissors-button js-move-button"><img src="images/scissors.png" class="move-icon"></button>
+    <p class="js-playerMove"></p>
+    <p class="js-vsText"></p>
+    <p class="js-computerMove"></p>
+  </div>
+
+  <div class="center-container">
+    <p class="resultText js-resultText hidden"></p>
+  </div>
+
+  <div class="center-container">
+    <button onclick="playAgain();" class="playAgainButton js-playAgainButton hidden">Play again!</button>
+  </div>
+  </div>
+
+  <footer>
+    <p class="footer-text">Made by Devin Taing</p>
+  </footer>
+
+  <script src="scripts/rps.js"></script>
+</body>
+</html>
