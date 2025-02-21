@@ -2,8 +2,35 @@ let playerMove = 'unknown';
 let computerMove = 'unknown';
 let result = 'unknown';
 
-function rps(element) {
+function bounce(element) {
+  return new Promise((resolve) => {
+    element.classList.add('bounce');
+    element.addEventListener('animationend', function() {
+      element.classList.remove('bounce');
+      resolve();
+    }, { once: true });
+  });
+}
+
+function fadeOutOthers(element) {
+  return new Promise((resolve) => {
+    const elements = document.querySelectorAll('.js-move-button');
+    for(const anElement of elements) {
+      if(anElement != element) {
+        anElement.classList.add('fadeOut');
+        anElement.addEventListener('transitionend', function() {
+          anElement.classList.remove('fadeOut');
+          resolve();
+        }, { once: true });
+      }
+    }
+  });
+}
+
+async function rps(element) {
+  await bounce(element);
   decidePlayerMove(element);
+  await fadeOutOthers(element);
   decideComputerMove();
   hideButtons();
   addClassHTML('js-vsText', 'vs.');
