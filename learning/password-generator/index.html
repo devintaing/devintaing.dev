@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Devin's Password Generator</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <form class="block">
+    <h1 class="title">Password Generator</h1>
+    <hr>
+    <div class="passwordElements">
+      <input id="generatedPassword" class="passwordHolder">
+      <button title="Refresh Password" type="button" onclick="generatePassword()"><img src="icons/refresh.png" alt="Refresh password icon."></button>
+      <button title="Copy Password" type="button" onclick="copyText()"><img src="icons/copy.png" alt="Copy password icon."></button>
+    </div>
+  </form>
+
+  <form class="block">
+    <h1 class="subtitle">Options:</h1>
+    <div class="options">
+    <label for="lengthInput" class="inputLabel">Length (chars): </label>
+    <input type="tel" id="lengthInput" value="12"><br>
+      
+    <input type="checkbox" id="includeLowercase" checked="true">
+    <label for="includeLowercase">a-z</label><br>
+
+    <input type="checkbox" id="includeUppercase" checked="true">
+    <label for="includeUppercase">A-Z</label><br>
+
+    <input type="checkbox" id="includeNumbers" checked="true">
+    <label for="includeNumbers">0-9</label><br>
+
+    <input type="checkbox" id="includeSymbols">
+    <label for="includeSymbols">!, @, #, $, %, ^, &, *</label><br><br>
+    </div>
+  </form>
+  <script src="index.js"></script>
+</body>
+</html>
