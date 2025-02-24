@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Rock Paper Scissors V5</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+  <link href="styles/rps-v5.css" rel="stylesheet" >
+</head>
+<body>
+  <p class="title">Rock Paper Scissors V5</p>
+
+  <div class="center-container">
+  <!--Rock Button-->
+  <button onclick="playGame('Rock');" class="move-button"><img src="images/rock-emoji.png" class="move-icon"></button>
+
+  <!--Paper Button-->
+  <button onclick="playGame('Paper');" class="move-button"><img src="images/paper-emoji.png" class="move-icon"></button>
+
+  <!--Scissors Button-->
+  <button onclick="playGame('Scissors');" class="move-button"><img src="images/scissors-emoji.png" class="move-icon"></button>
+  </div>
+
+  <p class="js-result result"></p>
+  <p class="js-moves moves"></p>
+  <p class="js-score score"></p>
+
+  <!--Reset Score Button-->
+  <button onclick="
+    score.wins = 0;
+    score.losses = 0;
+    score.ties = 0;
+    localStorage.removeItem('score');
+    updateScoreElement();
+  " class="reset-score-button">Reset Score</button>
+
+  <script src="scripts/rps-v5.js"></script>
+</body>
+</html>
